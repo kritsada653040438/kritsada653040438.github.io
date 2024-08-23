@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Review</title>
+    <link rel="stylesheet" href="stylesAndresponsive/style4.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML5 Review</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="form-section">
+        <h2>Registration Form</h2>
+        <form action="" method="post">
+          <table>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" id="name" name="name" required /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td>
+                <input type="email" id="email" name="email" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td>
+                <input type="password" id="password" name="password" required />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <fieldset>
+                  <legend>Select a plan:</legend>
+                  <input type="radio" id="basic" name="plan" value="basic" />
+                  <label for="basic">Basic</label>
+                  <input type="radio" id="pro" name="plan" value="pro" />
+                  <label for="pro">Pro</label>
+                  <input
+                    type="radio"
+                    id="enterprise"
+                    name="plan"
+                    value="enterprise"
+                  />
+                  <label for="enterprise">Enterprise</label>
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">I agree to the terms and conditions</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="submit">Submit</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <h2>Image Gallery</h2>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/200x200" alt="Image 1">
+                <img src="https://via.placeholder.com/200x200" alt="Image 2">
+                <img src="https://via.placeholder.com/200x200" alt="Image 3">
+                <img src="https://via.placeholder.com/200x200" alt="Image 4">
+                <img src="https://via.placeholder.com/200x200" alt="Image 5">
+                <img src="https://via.placeholder.com/200x200" alt="Image 6">
+            </div>
+      </section>
+      <section id="media-section">
+        <h2>Featured Video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bBcoXEZ4TOQ?si=7dTuZ0gHH5Fxbgr2"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Your browser does not support iframes. You can
+          <a href="https://youtu.be/bBcoXEZ4TOQ?si=y7GLquC68fiD8kLK"
+            >watch the video here</a
+          >.
+        </p>
+        <ul>
+          <li>Item 1</li>
+          <li>
+            Item 2
+            <ol>
+              <li>Subitem 1</li>
+              <li>Subitem 2</li>
+            </ol>
+          </li>
+        </ul>
+        <figure>
+          <img
+            src="stylesAndresponsive/time-management-tips.jpg"
+            width="700"
+            height="600"
+            alt="Time management tips"
+          />
+          <figcaption>Figure Caption: Time management tips</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Kritsada mahanam (653040438-6)</p>
+    </footer>
+  </body>
+</html>

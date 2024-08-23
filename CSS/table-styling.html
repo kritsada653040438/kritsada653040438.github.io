@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-styling</title>
+    <style>
+        .head{
+            font-size: 0.5;
+            color: white;
+            text-align: center;
+            background-color: #DE3163;
+            margin-bottom: 10px;}
+        #tables 
+           table{
+            border-collapse: collapse;
+            width: 100%;   }
+        th{
+            text-align: center;
+            color: #DE3163;
+            border-collapse: collapse;
+            border: 1px solid #DE3163;
+            padding: 5px;
+            height: 30px; } 
+        tr{
+            border-collapse: collapse;
+            border: 1px solid #DE3163;
+        }
+        td{
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #DE3163;
+            padding: 5px;
+            height: 30px;
+        }
+        #tables tr:nth-child(even) {
+            background-color: rgb(255, 220, 226);
+        }
+    </style>
+</head>
+<body class="body">
+    <header class = "head" style="padding: 1.5%;">
+        <h1>
+            Kritsada Mahanam
+        </h1>
+        <h2>
+            Student ID: 653040438-6
+        </h2>
+        <h3>
+            My favorite courses
+        </h3>
+    </header>
+    <section id="tables">
+        <table>
+            <tr style="background-color: rgb(255, 165, 180);">
+                <th>Year</th>
+                <th>Favourite Course 1</th>
+                <th>Favourite Course 2</th>
+                <th>GPA</th>  
+            </tr>
+            <tr>
+                <td>Freshman</td>
+                <td>Calculus I</td>
+                <td>Calculus II</td>
+                <td style="text-align: right;">3.29</td> 
+            </tr>
+            <tr>
+                <td>Sophomore</td>
+                <td>Calculas III</td>
+                <td>Differential Equation</td>
+                <td style="text-align: right;">3.54</td> 
+            </tr>
+            <tr>
+                <td>Junior</td>
+                <td>Theory of computation</td>
+                <td>Stochastic</td>
+                <td style="text-align: right;">3.54</td> 
+            </tr>
+
+        </table>
+    </section>
+</body>
+</html>

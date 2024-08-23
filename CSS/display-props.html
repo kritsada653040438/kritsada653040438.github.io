@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-props</title>
+    <style>
+        .head{
+            color: black;  
+            
+        }
+        .block{
+            display: block;
+            width: 100%;
+            border: 1px solid #DE3163;
+            text-align: left;
+            padding: 10px;
+        }
+        .b{
+            display: block;
+            text-align: left;
+            padding: 10px;
+            background-color: #FFD8DB;
+            margin-bottom: 5px;
+        }
+        .inline{
+            display: block;
+            width: 100%;
+            border: 1px solid #DE3163;
+            text-align: left;
+            padding: 10px;
+        }
+        .i{
+            display: inline;
+            width: 100%;
+            text-align: left;
+            padding: 5px;
+            background-color: #FFD8DB;
+            margin-right: 5px;
+        }
+        .containergrow{
+            display: flex;
+            width: 100%;
+            border: 1px solid #DE3163;
+            padding: 5px;
+        }
+        .item{
+           color: #000;
+           text-align: left;
+           padding: 10px; 
+           margin: 5px;
+        }
+        .grow-1{
+            flex-grow: 1;
+            background-color: #FFD8DB;
+        }
+        .grow-2{
+            flex-grow: 2;
+            background-color: pink;
+        }
+        .containershrink{
+            display: flex;
+            width: 100%;
+            border: 1px solid #DE3163;
+            padding: 5px;
+        }
+        .shrink-1{
+            flex-shrink: 1;
+            background-color: #FFD8DB;
+        }
+        .shrink-2{
+            flex-shrink: 2;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1 style=" text-align: center">Exercise about Property display</h1>
+        <h3> Your most frequenyly used apps</h3>
+        <h4>Hint: Display: Block</h4>
+    </header>
+    <section>
+       <div class="block">
+                <div class="b">Youtube</div>
+                <div class="b">Chrome</div>
+                <div class="b">Calendar</div>
+            </div>
+        <h3>Places you want to visit in Thailand</h3>
+        <h4>Hint: Display: Inline</h4>  
+        <div class="inline">
+            <span class="i">Chiang Mai</span>
+            <span class="i">Chiang Rai</span>
+            <span class="i">Kanchanaburi</span>
+        </div> 
+        <h3>Countries you want to visit</h3>
+        <h4>Hint: Display: flex (with flex-grow)</h4> 
+        <div class="containergrow">
+            <div class="item grow-1">Chiang Mai</div>
+            <div class="item grow-1">Chiang Rai</div>
+            <div class="item grow-2">Kanchanaburi</div>
+        </div>
+        <h3>Activities you want to do</h3>
+        <h4>Hint: Display: flex (with flex-shrink)</h4>
+        <div class="containershrink">
+            <div class="item shrink-1">Running</div>
+            <div class="item shrink-1">Walking</div>
+            <div class="item shrink-2">Meditation</div>
+        </div>   
+    </section>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: larger;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 5px;
+            margin-top: -30px;
+        }
+        nav  {
+            flex-direction: column;
+        }
+
+        ul {
+            padding: 0;
+            margin-top: -10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav li {
+            color: white;
+            display: inline;
+            padding: 5px;
+            list-style-type: none;
+        }
+        main {
+            display: flex;
+            margin: auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+            flex-basis: auto;
+        }
+
+        article {
+            flex: 2;
+            padding: 1rem;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+        aside li {
+            
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            
+        }
+
+        @media (max-width: 767px) {
+            main {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            nav{
+                display: grid;
+                grid-template-columns: repeat(10,1fr);
+                
+            }
+            nav li{
+                padding: 5px;
+                margin: 5px;
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: 900;">My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 style="font-weight: 900;">Main Article Title</h2>
+            <p>This is the main content of your article. It should be long enough to demonstrate responsive typography.</p>
+            <p>A meeting will be held on Wednesday, July 24, from 15:00 to 16:00, for students interested in developing 
+                an app using cane data. Students are strongly encouraged to review the data before attending the meeting.
+                 This preparation will allow for a more productive Q&A session, where you'll have the opportunity to ask 
+                 specific questions about the data and its application in app development
+                </p>
+            
+        </article>
+        <aside>
+            <h3 style="font-weight: 900;">Related Articles</h3>
+            <ul>
+                <li><a href="#">Related Article 1</a></li>
+                <li><a href="#">Related Article 2</a></li>
+                <li><a href="#">Related Article 3</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smartphone Comparison</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #efefef;
+        }
+        header {
+            background-color: #D0B8A8;
+            padding: 10px;
+            font-size: larger;
+        }
+        nav ul {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            text-decoration: none;
+            color: #8D493A;
+            font-weight: bold;
+        }
+        nav li {
+            list-style-type: none; 
+        }
+        main {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 35px;
+        }
+        main h1{
+            text-align: center;
+            
+        }
+        #products {
+            display: grid;
+            grid-gap: 3rem;
+            
+            
+        }
+        .phone {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 3%;
+            
+        }
+        .product-image {
+            background-color: #ddd;
+            height: 200px;
+            width: 250px;
+            margin-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.5rem;
+            
+        }
+        .phone h2 {
+            margin: 0;
+            color: #333333;
+            text-align: center;
+        }
+        .comparison {
+            padding: 2rem;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        @media (width > 1024px) {
+            #products {
+                grid-template-columns: repeat(3,1fr);
+                }
+            }
+           
+        @media (min-width: 768px) and (max-width: 1023px) {
+            #products {
+                grid-template-columns: repeat(2,1fr);
+                }
+            }
+        @media (width < 768px) {
+            #products {
+                grid-template-columns:1fr;
+                }
+            }     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#comparison">Comparison</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Smartphone Comparison</h1>
+      <section id="products">
+        <div class="phone">
+            <div class="product-image">Phone A</div>
+            <h2>Phone A</h2>
+            <p>High-end smartphone with advanced camera features.</p>
+        </div>
+        <div class="phone">
+            <div class="product-image">Phone B</div>
+            <h2>Phone B</h2>
+            <p>Mid-range smartphone with excellent battery life.</p>
+        </div>
+        <div class="phone">
+            <div class="product-image">Phone C</div>
+            <h2>Phone C</h2>
+            <p>Budget-friendly smartphone with solid performance.</p>
+        </div>
+      </section>
+
+      <section id="comparison">
+        <h2>Detailed Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Phone A</th>
+                    <th>Phone B</th>
+                    <th>Phone C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Screen Size</td>
+                    <td>6.5"</td>
+                    <td>6.2"</td>
+                    <td>5.8"</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+      <section id="features">
+        <h2>Key Features</h2>
+        <!-- Add feature list here -->
+      </section>
+    </main>
+  </body>
+</html>
